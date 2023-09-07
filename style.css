@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@700&family=Philosopher:ital@1&family=Poppins:wght@400;500;600&family=Source+Code+Pro:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    position: relative;
+}
+h1{
+    font-size: 2vmax;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+}
+.content {
+    /*background-image: url('photo1694118610.jpeg'); !* Замените 'your-image.jpg' на путь к вашему изображению *!*/
+    background-image: url('img.png'); /* Замените 'your-image.jpg' на путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoom 1s linear infinite;
+
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5); /* Увеличение изображения */
+    }
+
+}
